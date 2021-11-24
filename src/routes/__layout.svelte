@@ -4,4 +4,3 @@
 </script>
 
 <slot />
-<h1>hey yo</h1>
