@@ -8,7 +8,11 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			postcss: true
+			postcss: true,
+
+			scss: {
+				prependData: '@import "src/css/variables.scss";'
+			}
 		})
 	],
 
@@ -23,6 +27,14 @@ const config = {
 					$components: path.resolve('./src/components'),
 					$data: path.resolve('./src/data'),
 					$img: path.resolve('./src/images')
+				}
+			},
+
+			css: {
+				preprocessorOptions: {
+					scss: {
+						additionalData: '@import "src/css/variables.scss";'
+					}
 				}
 			}
 		}
