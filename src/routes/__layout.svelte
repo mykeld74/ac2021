@@ -1,6 +1,5 @@
 <script>
-	import '$css/app.scss';
-	import '$css/ac.scss';
+	import '../app.css';
 </script>
 
 <slot />

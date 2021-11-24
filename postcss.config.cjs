@@ -7,7 +7,6 @@ const dev = mode === 'development';
 const config = {
 	plugins: [
 		autoprefixer(),
-
 		!dev &&
 			cssnano({
 				preset: 'default'
