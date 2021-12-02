@@ -104,6 +104,10 @@
 		font-size: 24px;
 		font-weight: 700;
 		cursor: pointer;
+		transition: background 0.3s ease-in-out;
+		&:hover {
+			background-color: var(--acDarkRed);
+		}
 	}
 	.buttonContainer {
 		display: grid;
